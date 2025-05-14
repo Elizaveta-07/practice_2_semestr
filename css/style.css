@@ -3,7 +3,7 @@ body {
     padding: 0;
 }
 
-.nazv {
+.nazv h1{
     display: flex;
 }
 
@@ -58,7 +58,7 @@ body {
     height: 22px;
 }
 
-.regic {
+.regic { 
     border-radius: 40px;
     text-align: center;
     height: 30px;
@@ -69,3 +69,4 @@ body {
 img {
     width: 50px;
 }
+
