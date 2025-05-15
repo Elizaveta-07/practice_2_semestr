@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+
+}
+
+.section {
+    background-color: rgba(78, 134, 219, 0.363);
+    height: 55px;
+    width: 100%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.snimok {
+    img {
+        padding: 10px;
+
+    }
+}
+
+.shapka {
+    font-size: 23px;
+    padding: 10px;
+    padding-left: 160px;
+    margin: -55px;
+}
+
+.shapka2 {
+    img {
+        padding: 10px;
+        padding-left: 980px;
+        
+    }
+}
+
+.section_inner {
+    width: 100%;
+    height: 100%;
+}
+
+
+.container_inner {
+
+}
+
+.chat {
+    background-color: rgba(157, 174, 230, 0.507);
+    width: 20%;
+    height: 30px;
+}
+
+
+.chats {
+    background-color:  rgba(157, 174, 230, 0.507);
+    width: 20%;
+    height: 869px;
+}
