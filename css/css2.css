@@ -3,10 +3,9 @@ body {
     padding: 0;
 }
 
-.container {
+.container_jk {
     width: 100%;
     height: 100%;
-
 }
 
 .section {
@@ -105,4 +104,12 @@ body {
 
 .knopka {
     background-color: rgba(160, 131, 207, 0.432);
+}
+
+.container_yt {
+    margin-top: 0px;
+}
+
+.container_jk {
+    margin-top: 340px;
 }

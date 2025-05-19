@@ -28,7 +28,7 @@ function _post(params, callback) {
 LoadPageAuth()
 
 function LoadPageAuth() {
-    _get({url: '/modules/authorization.html'}, function(responseText) {
+    _get({url: '/modules/registration.html'}, function(responseText) {
         content.innerHTML=responseText
         onloadPageAuth()
     })
@@ -39,17 +39,18 @@ function LoadPageAuth() {
         let request_data = new FormData()
         request_data.append('fam', document.querySelector('input[name="fam"]').value)
         request_data.append('name', document.querySelector('input[name="name"]').value)
-        request_data.append('Email', document.querySelector('input[name="Email"]').value)
-        request_data.append('password', document.querySelector('input[name="password"]').value)
+        request_data.append('otch', document.querySelector('input[name="otch"]').value)
+        request_data.append('email', document.querySelector('input[name="email"]').value)
+        request_data.append('pass', document.querySelector('input[name="pass"]').value)
         let xhr = new XMLHttpRequest();
-        request_data.append('token', token)
-        xhr.open('POST', `${host}/user/`)
+        request_data.append('token', TOKEN)
+        xhr.open('POST', `${HOST}/user/`)
         xhr.send(request_data);
         xhr.onreadystatechange = function() {
             if (xhr.readyState == 4) {
                 console.log(this.responseText);
                 if (xhr.status == 200) {
-                    onloadPageAuth()
+                    LoadPageChat()
                 }
                 if (xhr.status == 401) {
                     let response = JSON.parse(xhr.responseText)
@@ -60,3 +61,8 @@ function LoadPageAuth() {
     })
 }
 
+function LoadPageChat() {
+    _get({url: '/modules/chat.html'}, function(responseText) {
+        content.innerHTML=responseText
+    })
+}

@@ -44,6 +44,12 @@ body {
     height: 22px;
 }
 
+.otch {
+    background-color: beige;
+    margin-left: 15px;
+    width: 90%;
+    height: 22px;
+}
 .Email{
     background-color: beige;
     margin-left: 15px;
@@ -72,4 +78,108 @@ img {
 
 .shapka {
     font-size: 40px;
+}
+
+.btn {
+    width: 140px;
+    height: 20px;
+    background-color: rgba(21, 129, 230, 0.137);
+    border-radius: 80px;
+}
+
+.btn_1 {
+    border-radius: 80px;
+    background-color: rgba(33, 97, 153, 0.555);
+}
+
+.container_two {
+    width: 285px;
+    height: 300px;
+}
+
+/* ЧАТЫ */
+
+
+.shapka {
+    font-size: 23px;
+    padding: 10px;
+    padding-left: 160px;
+    margin: -55px;
+}
+
+.shapka2 {
+    img {
+        padding: 10px;
+        padding-left: 980px;
+        
+    }
+}
+
+.section_inner {
+    width: 100%;
+    height: 100%;
+}
+
+.chats {
+    background-color:  rgba(157, 174, 230, 0.507);
+    width: 20%;
+    height: 860px;
+}
+
+.container_yt {
+    width: 100%;
+    height: 100%;
+    font-size: 22px;
+    margin-top: 22px;
+    margin-left: 0;
+}
+
+.chat {
+    background-color: rgba(132, 163, 221, 0.603);
+    display: block;
+}
+
+.chat .prof {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+
+.nastr {
+    width: 40px;
+    height: 40px;
+    margin-top: 15px;
+    margin-left: 95%;
+}
+
+.windows {
+    display: flex;
+}
+
+.chats {
+   width: 300px;
+  
+}
+
+.poisk {
+    width: 292px;
+    height: 30px;
+    background-color: aliceblue;
+}
+
+
+.lines-1 {
+    border: 1px solid rgba(14, 73, 107, 0.589);
+    height: 35px;
+}
+
+.coob {
+    width: 800px;
+    height: 30px;
+    margin-top: 800px;
+    margin-left: 30px;
+}
+
+.knopka {
+    background-color: rgba(160, 131, 207, 0.432);
 }
