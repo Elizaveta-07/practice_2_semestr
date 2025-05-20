@@ -35,7 +35,7 @@ function LoadPageAuth() {
 }
 
  function onloadPageAuth() {
-    document.querySelector('.btn').addEventListener('.click', function() {
+    document.querySelector('.btn_4').addEventListener('.click', function() {
         let request_data = new FormData()
         request_data.append('fam', document.querySelector('input[name="fam"]').value)
         request_data.append('name', document.querySelector('input[name="name"]').value)

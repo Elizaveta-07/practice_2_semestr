@@ -1,185 +1,114 @@
 body {
     margin: 0;
     padding: 0;
-}
-
-.nazv h1{
-    display: flex;
-}
-
-.registr {
-    border-radius: 50px;
-    text-align: center;
-    height: 50px;
+    background-color: rgb(110, 166, 214);
 }
 
 .container {
-    background-color: rgba(170, 200, 209, 0.479);
-    width: 385px;
-    height: 490px;
-    text-align: left;
-    border-radius: 15px;
-    font-size: 12px;
-    margin-top: 80px;
-    margin-left: 350px;
+background-color: rgb(255, 255, 255);
+width: 400px;
+height: 590px;
+text-align: left;
+font-size: 12px;
+margin-top: 100px;
+margin-left: 750px;
 }
 
-.container h1 {
-    margin: 15px;
-    margin-left: 15px;
-    height: 22px;
+h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.section {
+    background-color: rgba(0, 58, 250, 0.205);
+    text-align: center;
+    height: 36px;
 }
 
 .fam {
-    background-color: beige;
-    margin-left: 15px;
-    width: 90%;
-    height: 22px;
+    width: 80%;
+    height: 25px;
+    border-radius: 20px;
 }
 
-.ima {
-    background-color: beige;
-    margin-left: 15px;
-    width: 90%;
-    height: 22px;
+.name {
+    width: 80%;
+    height: 25px;
+    border-radius: 20px;
+
 }
 
 .otch {
-    background-color: beige;
-    margin-left: 15px;
-    width: 90%;
-    height: 22px;
-}
-.Email{
-    background-color: beige;
-    margin-left: 15px;
-    width: 90%;
-    height: 22px;
+    width: 80%;
+    height: 25px;
+    border-radius: 20px;
 }
 
-.parol {
-    background-color: beige;
-    margin-left: 15px;
-    width: 90%;
-    height: 22px;
+.email {
+    width: 80%;
+    height: 25px;
+    border-radius: 20px;
 }
 
-.regic { 
-    border-radius: 40px;
-    text-align: center;
-    height: 30px;
-    margin-top: 30px;
-    font-size: 40px;
-}
-
-img {
-    width: 50px;
-}
-
-.shapka {
-    font-size: 40px;
-}
-
-.btn {
-    width: 140px;
-    height: 20px;
-    background-color: rgba(21, 129, 230, 0.137);
-    border-radius: 80px;
+.pass {
+    width: 80%;
+    height: 25px;
+    border-radius: 20px;
 }
 
 .btn_1 {
-    border-radius: 80px;
-    background-color: rgba(33, 97, 153, 0.555);
+    margin-right: 100px;
+    font-size: 15px;
+    margin-top: 5px;
 }
 
-.container_two {
-    width: 285px;
-    height: 300px;
+.btn_2 {
+    font-size: 15px;
 }
 
-/* ЧАТЫ */
-
-
-.shapka {
-    font-size: 23px;
-    padding: 10px;
-    padding-left: 160px;
-    margin: -55px;
+.btn_3 {
+    font-size: 15px;
+    border-radius: 23px;
+    border-color: rgba(13, 103, 182, 0.445);
+    margin-top: 30px;
 }
 
-.shapka2 {
-    img {
-        padding: 10px;
-        padding-left: 980px;
-        
-    }
+.btn_4 {
+    font-size: 15px;
+    border-radius: 23px;
+    border-color: rgba(13, 103, 182, 0.445);
+    margin-right: 15px;
 }
 
-.section_inner {
+.container_2 {
     width: 100%;
     height: 100%;
+    margin-top: 260px;
+    text-align: center;
 }
 
-.chats {
-    background-color:  rgba(157, 174, 230, 0.507);
-    width: 20%;
-    height: 860px;
+.section_2 {
+    margin-right: 190px;
+
 }
 
-.container_yt {
-    width: 100%;
-    height: 100%;
-    font-size: 22px;
-    margin-top: 22px;
-    margin-left: 0;
+.login {
+    margin-bottom: 20px;
+    width: 50%;
+    height: 25px;
+    border-radius: 20px;
+    margin-left: 230px;
 }
 
-.chat {
-    background-color: rgba(132, 163, 221, 0.603);
-    display: block;
+.pass_2 {
+    width: 50%;
+    height: 25px;
+    border-radius: 20px;
+    margin-left: 230px;
 }
 
-.chat .prof {
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-}
-
-.nastr {
-    width: 40px;
-    height: 40px;
-    margin-top: 15px;
-    margin-left: 95%;
-}
-
-.windows {
-    display: flex;
-}
-
-.chats {
-   width: 300px;
-  
-}
-
-.poisk {
-    width: 292px;
-    height: 30px;
-    background-color: aliceblue;
+.regis_auth {
+    margin-top: 20px;
+    margin-left: 200px;
 }
 
 
-.lines-1 {
-    border: 1px solid rgba(14, 73, 107, 0.589);
-    height: 35px;
-}
-
-.coob {
-    width: 800px;
-    height: 30px;
-    margin-top: 800px;
-    margin-left: 30px;
-}
-
-.knopka {
-    background-color: rgba(160, 131, 207, 0.432);
-}
