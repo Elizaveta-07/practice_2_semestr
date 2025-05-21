@@ -25,34 +25,33 @@ function _post(params, callback) {
 }
 
 
-LoadPageAuth()
-
-function LoadPageAuth() {
-    _get({url: '/modules/registration.html'}, function(responseText) {
+    _post({url: '/modules/registration.html'}, function(responseText) {
         content.innerHTML=responseText
-        onloadPageAuth()
+        onloadPageChat()
+        
+        OnLoadPageAuthReg()
     })
-}
 
- function onloadPageAuth() {
-    document.querySelector('.btn_4').addEventListener('.click', function() {
-        let request_data = new FormData()
-        request_data.append('fam', document.querySelector('input[name="fam"]').value)
-        request_data.append('name', document.querySelector('input[name="name"]').value)
-        request_data.append('otch', document.querySelector('input[name="otch"]').value)
-        request_data.append('email', document.querySelector('input[name="email"]').value)
-        request_data.append('pass', document.querySelector('input[name="pass"]').value)
+
+ function onloadPageChat() {
+    document.querySelector('.btn_4').addEventListener('click', function() {
+        let fdata = new FormData();
+        fdata.append('fam', document.querySelector('input[name="fam"]').value)
+        fdata.append('name', document.querySelector('input[name="name"]').value)
+        fdata.append('otch', document.querySelector('input[name="otch"]').value)
+        fdata.append('email', document.querySelector('input[name="email"]').value)
+        fdata.append('pass', document.querySelector('input[name="pass"]').value)
+
         let xhr = new XMLHttpRequest();
-        request_data.append('token', TOKEN)
+        fdata.append('token', TOKEN)
         xhr.open('POST', `${HOST}/user/`)
-        xhr.send(request_data);
+        xhr.send(fdata)
         xhr.onreadystatechange = function() {
             if (xhr.readyState == 4) {
-                console.log(this.responseText);
                 if (xhr.status == 200) {
                     LoadPageChat()
                 }
-                if (xhr.status == 401) {
+                if (xhr.status == 422) {
                     let response = JSON.parse(xhr.responseText)
                     alert(response.message)
                 }
@@ -64,5 +63,38 @@ function LoadPageAuth() {
 function LoadPageChat() {
     _get({url: '/modules/chat.html'}, function(responseText) {
         content.innerHTML=responseText
+    })
+}
+
+function OnLoadPageAuthReg() {
+    document.querySelector('.btn_2').addEventListener('click', function() {
+        _post({url: '/modules/authorization.html'}, function(responseText) {
+        content.innerHTML=responseText
+        OnLoadPageAuth()
+    })
+
+    })
+}
+
+function OnLoadPageAuth() {
+    document.querySelector('.btn_auth').addEventListener('click', function() {
+         let fdata = new FormData();
+        fdata.append('email', document.querySelector('input[name="email"]').value)
+        fdata.append('pass', document.querySelector('input[name="pass"]').value)
+
+        let xhr = new XMLHttpRequest();
+        fdata.append('token', TOKEN)
+        xhr.open('POST', `${HOST}/auth/`)
+        xhr.send(fdata)
+        xhr.onreadystatechange = function() {
+                if (xhr.status == 200) {
+                    LoadPageChat()
+                }
+                if (xhr.status == 401) {
+                    let response = JSON.parse(xhr.responseText)
+                    alert(response.message)
+                }
+            
+        }
     })
 }
