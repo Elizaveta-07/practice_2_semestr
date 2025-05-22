@@ -22,7 +22,7 @@ h1 {
     background-color: rgba(0, 58, 250, 0.205);
     text-align: center;
     height: 36px;
-}
+}   
 
 .fam {
     width: 80%;
@@ -34,7 +34,6 @@ h1 {
     width: 80%;
     height: 25px;
     border-radius: 20px;
-
 }
 
 .otch {
@@ -111,7 +110,7 @@ h1 {
     margin-left: 200px;
 }
 
-body {
+.body_1 {
     margin: 0;
     padding: 0;
     background-color: rgb(62, 126, 182);
@@ -141,6 +140,12 @@ body {
     padding: 10px;
     padding-left: 160px;
     margin: -55px;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 440px;
 }
 
 .shapka2 {
